@@ -1,4 +1,4 @@
-//menumobile
+//menu for mobile
 
 const hamburger = document.querySelector(".hamburger");
 const list = document.querySelector(".list");
