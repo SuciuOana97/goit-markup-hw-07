@@ -647,6 +647,11 @@ body {
   padding: 32px 0;
 }
 
+.social-list {
+  width: 40px;
+  height: 40px;
+}
+
 .team-icon:hover,
 .team-icon:focus {
   background-color: #404bbf;
@@ -862,6 +867,116 @@ body {
   fill: #f4f4fd;
 }
 
+@media (min-width: 768px) and (max-width: 1158px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .top-head {
+    position: relative;
+  }
+
+  .mobile-close-menu {
+    display: none;
+  }
+  .mobile-social-media {
+    display: none;
+  }
+  .navigation-list {
+    display: flex;
+    gap: 40px;
+  }
+  .address-container {
+    display: block;
+  }
+
+  .address-list {
+    display: block;
+  }
+  .first-section-container {
+    padding: 96px 0;
+  }
+  .svg-icon {
+    display: none;
+  }
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .trait-container {
+    width: calc((100% - 24px) / 2);
+  }
+  .two-section {
+    display: none;
+  }
+  .section-three-container {
+    padding: 96px 108px;
+  }
+
+  .trait-header {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-align: start;
+  }
+  .team-list {
+    flex-direction: row;
+  }
+  .team-member-container {
+    width: calc((100% - 24px) / 2);
+  }
+  .customer-section {
+    padding: 96px 108px;
+  }
+
+  .customers-section {
+    flex-wrap: wrap;
+  }
+  .customer-box {
+    width: calc((100% - 48px) / 3);
+    margin: 0 auto;
+  }
+  .footer-element {
+    padding: 96px 108px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: start;
+  }
+  .footer-bar {
+    margin-right: 120px;
+  }
+  .footer-logo {
+    text-align: left;
+  }
+  .title-icon-media {
+    text-align: start;
+  }
+  /* subscribe */
+  .footer-formular {
+    flex-wrap: nowrap;
+    gap: 24px;
+    flex-direction: row;
+  }
+  .footer-inp {
+    width: 264px;
+    margin: 0;
+  }
+}
+
 /* ./PORTOFOLIO.HTML */
 
 /* the list of buttons */
@@ -1021,44 +1136,4 @@ body {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1158px) {
-  /* .head-container{
-  width: 1158px;
-} */
-
-  .head-container {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  .header {
-    width: 100%;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .top-head {
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .navigation-container {
-    margin: 0;
-  }
-
-  .hero-image-header {
-    width: 320px;
-    color: white;
-    font-size: 36px;
-    font-family: Roboto;
-    font-weight: 700;
-    text-transform: capitalize;
-    line-height: 40px;
-    letter-spacing: 0.72px;
-    text-align: center;
-    margin-bottom: 72px;
-  }
 }
