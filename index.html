@@ -29,7 +29,7 @@
         <!--Mobile menu-->
         <button class="hamburger-menu" type="button" js-open-menu>
           <svg width="32" height="22">
-            <use href="./images/icons.svg#icon-menu"></use>
+            <use href="./images/icons.svg#menu-hamburger"></use>
           </svg>
         </button>
         <!--Navigation bar-->
@@ -110,7 +110,7 @@
       </div>
     </header>
     <main>
-      <!--first section-->
+      <!--first section Hero-->
       <section class="hero-image-section section">
         <div class="container container-header">
           <h1 class="hero-image-header">
@@ -536,7 +536,7 @@
           Leave your contacts and we will call you back
         </p>
         <!-- formular -->
-        <form>
+        <form autocomplete="off" novalidate class="modal-form">
           <!-- name -->
           <div class="form-section">
             <label class="box-name" for="user-name">Name</label>
@@ -544,7 +544,6 @@
               <input
                 id="user-name"
                 type="text"
-                required
                 class="input-style"
                 name="user-name"
               />
@@ -560,7 +559,6 @@
               <input
                 id="user-phone"
                 type="text"
-                required
                 class="input-style"
                 name="user-phone"
               />
@@ -576,7 +574,6 @@
               <input
                 id="user-mail"
                 type="text"
-                required
                 class="input-style"
                 name="user-mail"
               />
@@ -615,7 +612,7 @@
               <a href="#" class="link-policy">Privacy Policy</a></label
             >
           </div>
-          <button class="button-send">Send</button>
+          <button type="submit" class="button-send">Send</button>
         </form>
       </div>
     </div>

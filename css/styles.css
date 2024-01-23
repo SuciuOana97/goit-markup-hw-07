@@ -31,18 +31,23 @@
 }
 
 .modal-window {
+  /*max-width: 408px;*/
+  /*min-height: 584px;*/
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
-  background: #fcfcfc;
-  border-radius: 4px;
+  transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   padding: 72px 24px 24px 24px;
+  min-width: 320px;
+}
+button {
+  margin: 0;
 }
 
 .modal-button {
@@ -216,6 +221,8 @@ a:focus use {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .p-input:checked + .label-policy span:first-child {
   border: none;
@@ -224,6 +231,110 @@ a:focus use {
 }
 .input-style:focus + .input-svg {
   fill: #4d5ae5;
+}
+
+/*meniul pt mobil*/
+
+.hamburger-menu {
+  margin-left: 0;
+  border: none;
+  background-color: var(--background-color);
+  fill: var(--brand-color);
+  margin: 24px 0;
+  cursor: pointer;
+}
+
+.mobile-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+  margin-right: 76px;
+}
+
+.nav-address-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-close-menu {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-close-menu:hover,
+.mobile-close-menu:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.top-head {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-container {
+  /* background-color: var(--background-color);*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navigation-list {
+  /*display: flex;
+gap: 40px;*/
+  /*display: none;*/
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+  margin-right: 76px;
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo-span-dark-header {
+  color: var(--brand-color);
 }
 
 .container {
@@ -357,6 +468,16 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--OCEAN);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .address-list {
@@ -977,6 +1098,231 @@ body {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .top-head {
+    position: relative;
+  }
+
+  .mobile-close-menu {
+    display: none;
+  }
+  .mobile-social-media {
+    display: none;
+  }
+  .navigation-list {
+    display: flex;
+    gap: 40px;
+  }
+  .address-container {
+    display: flex;
+    color: var(--text-color);
+    /*background-color: var(--background-color);*/
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+  }
+  /*.hamburger-svg {
+    color: var(--brand-color);
+    fill: var(--brand-color);
+}*/
+  .hero-image-header {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+  }
+  .hero-image-section {
+    padding: 188px 0;
+  }
+  .first-section-container {
+    padding: 120px 0;
+  }
+  .svg-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .about-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .trait-header {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .two-section {
+    display: block;
+    background-color: var(--background-color);
+    padding-bottom: 120px;
+  }
+  .image-details {
+    width: 100%;
+    min-width: 360px;
+  }
+  .li.image-details {
+    width: calc((100% - 48px) / 3);
+  }
+  .first-section-container {
+    padding: 120px 0;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .team-member-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .li.team-member-container {
+    width: calc((100% - 72px) / 4);
+  }
+  .customer-section {
+    /* padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 16px;
+    padding-right: 16px;*/
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-section {
+    flex-wrap: nowrap;
+    gap: 24px;
+    align-items: center;
+  }
+  .customer-box {
+    width: calc((100% - 120px) / 6);
+    margin: 0 auto;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .footer-bar {
+    margin-right: 120px;
+  }
+  .footer-logo {
+    text-align: left;
+  }
+  .title-icon-media {
+    text-align: start;
+  }
+  /*suscribe*/
+  .footer-formular {
+    flex-wrap: nowrap;
+    gap: 24px;
+    flex-direction: row;
+  }
+  .footer-subscribe {
+    margin-left: 79px;
+  }
+  .footer-inp {
+    width: 264px;
+    margin: 0;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-picture@2x.jpeg");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-address-div {
+    width: auto;
+    position: fixed;
+    background-color: var(--background-color);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    text-align: flex-start;
+    justify-content: space-between;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  }
+
+  .nav-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #404bbf;
+  }
+
+  .address-list {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .address-link {
+    margin-bottom: 40px;
+  }
+
+  .mobilenumber {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--logo-color);
+  }
+
+  .mail {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+
+  .mobile-social-media {
+    gap: 56px;
+  }
+}
+
 /* ./PORTOFOLIO.HTML */
 
 /* the list of buttons */
@@ -1133,7 +1479,4 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-@media screen and (min-width: 769px) and (max-width: 1158px) {
 }
