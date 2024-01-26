@@ -1266,7 +1266,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-picture@2x.jpeg");
+      url(./images/computerdesktop.jpeg);
   }
 }
 
