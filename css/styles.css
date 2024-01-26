@@ -1266,7 +1266,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./images/computerdesktop.jpeg);
+      url("../images/computerdesktop.jpeg");
   }
 }
 
@@ -1276,7 +1276,7 @@ body {
     height: 796px;
     flex-shrink: 0;
     position: fixed;
-    background-color: var(--background-color);
+    background-color: var(--WHITE);
     right: 0;
     top: 0;
     bottom: 0;
