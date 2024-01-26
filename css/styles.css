@@ -1489,16 +1489,13 @@ justify-content: center;*/
 /* ./PORTOFOLIO.HTML */
 
 /* the list of buttons */
+.visually-hidden {
+  display: none;
+}
 
 .section-one-container {
   padding-top: 96px;
   padding-bottom: 120px;
-}
-.sec-one-list-of-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
 }
 
 .sec-one-button {
@@ -1526,21 +1523,14 @@ justify-content: center;*/
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
-/*list of portfolio projects */
-
-.list-of-projects-sec-two {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-
-.project-image {
-  display: block;
-}
-.project-container {
-  width: calc((100% - 48px) / 3);
+.project-header {
+  color: var(--NAVY-BLUE);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 8px;
 }
 
 .project-link {
@@ -1552,19 +1542,83 @@ justify-content: center;*/
 .project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 
+.project-description {
+  color: var(--SLATE, #434455);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  border-left: px solid #e7e9fc;
+  border-right: px solid #e7e9fc;
+  text-align: left;
+}
+
+.project-description:hover,
+.project-description:focus {
+  transform: translateY(0%);
+}
+
+.sec-one-list-of-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+/*list of portfolio projects */
+
+.list-of-projects-sec-two {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.project-image {
+  display: block;
+}
+.li.project-container {
+  width: calc((100% - 48px) / 3);
+}
+.port-details {
+  padding: 32px 16px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-top: none;
+  margin-bottom: 8px;
+}
+
+/*stilizare overlay*/
+
+.project-foto-card {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.overlay-paragraf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .project-link:hover .overlay-paragraf {
   transform: translateY(0%);
 }
 
 .project-link:focus .overlay-paragraf {
   transform: translateY(0%);
-}
-
-.project-foto-card {
-  position: relative;
-  overflow: hidden;
 }
 
 .portfolio-link-app:hover,
@@ -1574,35 +1628,6 @@ justify-content: center;*/
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #3f51b5;
-  transition: transform 250ms ease-in-out;
-}
-
-/*.project-foto-card:hover .overlay {
-
-}*/
-
-.overlay-paragraf {
-  position: absolute;
-  top: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  padding: 40px 32px;
-  background-color: #4d5ae5;
-  height: 100%;
-  width: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .project-foto-card:hover .overlay-paragraf {
   transform: translateY(0%);
 }
@@ -1610,29 +1635,7 @@ justify-content: center;*/
   transform: translateY(0%);
 }
 
-.port-details {
-  padding: 32px 16px;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  border-top: none;
-}
-
 .port-details:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.project-header {
-  color: var(--NAVY-BLUE);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-
-.project-description {
-  color: var(--SLATE, #434455);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
