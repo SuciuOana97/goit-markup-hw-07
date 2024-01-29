@@ -676,7 +676,7 @@ min-width: 360px;}
 .team-icon {
   background-color: #4d5ae5;
   border-radius: 50%;
-  width: 100%;
+  /*width: 100%;*/
   height: 100%;
   width: 40px;
   height: 40px;
