@@ -335,7 +335,7 @@ button {
   align-items: center;
 }
 .navigation-container {
-  /* background-color: var(--background-color);*/
+  /* background-color: var(--WHITE);*/
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -405,8 +405,8 @@ gap: 40px;*/
 }
 
 .address-container {
-  /*color: var(--text-color);
-    background-color: var(--background-color);
+  /*color: var(--SLATE);
+    background-color: var(--WHITE);
     font-size: 16px;
     line-height: 24px;
     font-style: normal;*/
@@ -427,14 +427,112 @@ gap: 40px;*/
   color: #404bbf;
 }
 
+/* hero content section */
+
+.hero-image-section {
+  background-color: var(--navy-blue);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/computerdesktop.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  /* padding: 188px 0;*/
+  padding: 112px 0;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+.section {
+  padding: 94px 0px;
+}
+.container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-header {
+  color: var(--WHITE, #fff);
+  /*font-size: 56px;
+line-height: 1.07;*/
+  text-align: center;
+  /*letter-spacing: 0.02em;*/
+  max-width: 496px;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+}
+
+.hero-image-button {
+  background: var(--IRIS, #4d5ae5);
+  color: var(--WHITE, #fff);
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  padding: 16px 32px;
+  height: 56px;
+  border: none;
+  /*margin: auto;*/
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-image-button:hover,
+.hero-image-button:focus {
+  color: var(--WHITE, #ffffff);
+  background-color: var(--OCEAN);
+}
+
+/*Section two*/
+
+.trait-container {
+  /*display: inline-flex;
+  width: 100%;
+  min-width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;*/
+}
+
+.svg-icon {
+  /*display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;*/
+  display: none;
+}
+
+.about-list {
+  /*display: flex;
+gap: 24px;
+justify-content: center;*/
+  display: flex;
+  flex-direction: column;
+}
+
 /*header*/
 
-.container-header {
+/*.container-header {
   max-width: 496px;
   margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
-}
+}*/
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -622,62 +720,6 @@ body {
   text-decoration: none;
 }
 
-/* hero content section */
-
-.hero-image-section {
-  background-color: var(--navy-blue);
-  background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/computerdesktop.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  padding: 188px 0;
-  max-width: 1440px;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image-header {
-  color: var(--WHITE, #fff);
-  text-align: center;
-  font-size: 56px;
-  line-height: 107.143%;
-  letter-spacing: 1.12px;
-  max-width: 496px;
-  margin: 0 auto;
-  padding-bottom: 48px;
-}
-
-.hero-image-button {
-  background: var(--IRIS, #4d5ae5);
-  color: var(--WHITE, #fff);
-  font-family: "Roboto", sans-serif;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0.64px;
-  cursor: pointer;
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  margin: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-image-button:hover,
-.hero-image-button:focus {
-  color: var(--WHITE, #ffffff);
-  background-color: var(--OCEAN);
-}
-
 /* section one styles , webstudio qualities */
 .first-section-container {
   padding: 120px 0;
@@ -696,22 +738,6 @@ body {
   overflow: hidden;
 }
 
-.about-list {
-  /*display: flex;
-gap: 24px;
-justify-content: center;*/
-  display: flex;
-  flex-direction: column;
-}
-
-.trait-container {
-  display: inline-flex;
-  width: 100%;
-  min-width: 264px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
 .trait-header {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
