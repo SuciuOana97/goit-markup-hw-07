@@ -327,6 +327,16 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.header {
+  background: var(--WHITE, #ffffff);
+  /* width: 1440px; */
+  height: 72px;
+  border-bottom: 1px solid #e7e9fc;
+  display: flex;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .top-head {
   display: flex;
   margin: 0 auto;
@@ -479,7 +489,7 @@ line-height: 1.07;*/
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.64px;
-  cursor: pointer;
+
   display: block;
   min-width: 169px;
   padding: 16px 32px;
@@ -965,8 +975,13 @@ min-width: 360px;}
 }
 
 .customer-section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  /*padding-top: 96px;
+  padding-bottom: 96px;*/
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* width: 1440px; */
+  /* min-width: 428px; */
 }
 
 .title-two {
@@ -1092,7 +1107,7 @@ min-width: 360px;}
   align-items: center;
   gap: 16px;
   padding-left: 0px;*/
-
+  flex-wrap: wrap;
   display: flex;
   gap: 16px;
 }
@@ -1516,7 +1531,7 @@ placeholder {
       0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   }
 
-  /*.is-hidden-mobile {
+  .is-hidden-mobile {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -1577,6 +1592,19 @@ placeholder {
 
   .mobile-social-media {
     gap: 56px;
+  }
+
+  .hero-image-header {
+    width: 320px;
+    color: white;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-align: center;
+    margin-bottom: 72px;
   }
   .team-icon {
     width: 40px;
@@ -1659,10 +1687,17 @@ placeholder {
   }
 
   .customer-section {
-    width: 396px;
-    height: 520px;
-    flex-shrink: 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /*width: 1440px;
+    min-width: 428px;*/
   }
+
+  .customer-box {
+    width: 150px;
+    height: 88px;
+  }
+
   .title-two {
     width: 197.469px;
 
@@ -1676,9 +1711,6 @@ placeholder {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-  }
-  .customers-section {
-    flex-wrap: wrap;
   }
 
   .modal {
@@ -1707,10 +1739,8 @@ placeholder {
     letter-spacing: 0.64px;
   }
 
-  .container-mobil {
-    width: 428px;
-    height: 664px;
-    flex-shrink: 0;
+  .footer-social-media {
+    flex-direction: column;
   }
 }
 
