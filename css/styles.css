@@ -1625,6 +1625,61 @@ placeholder {
   .two-section {
     display: none;
   }
+  .section-three-container {
+    width: 428px;
+    height: 2232px;
+    flex-shrink: 0;
+    background: var(--CLOUD, #f4f4fd);
+  }
+  .section-three-header {
+    color: var(--NAVY-BLUE, #2e2f42);
+    text-align: center;
+
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 72px;
+  }
+
+  .li.team-member-container {
+    display: flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    margin: 72px auto;
+    gap: 32px;
+  }
+
+  .customer-section {
+    width: 396px;
+    height: 520px;
+    flex-shrink: 0;
+  }
+  .title-two {
+    width: 197.469px;
+
+    color: var(--NAVY-BLUE, #2e2f42);
+    text-align: center;
+
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .customers-section {
+    flex-wrap: wrap;
+  }
 
   .modal {
     width: 428px;
