@@ -1511,9 +1511,6 @@ placeholder {
 
 @media screen and (max-width: 768px) {
   .nav-address-div {
-    width: 428px;
-    height: 796px;
-    flex-shrink: 0;
     position: fixed;
     background-color: var(--WHITE);
     right: 0;
@@ -1548,14 +1545,29 @@ placeholder {
     align-items: flex-start;
     gap: 40px;
   }*/
+  .navigation-list {
+    flex-direction: column;
+    justify-content: left;
+    background-color: #fff;
+  }
 
+  .list-item {
+    margin: 16px 0;
+  }
   .nav-link {
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    transition: 0.7s ease;
+
+    /*font-weight: 700;
     font-size: 36px;
     line-height: 60px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    gap: 40px;
+    gap: 40px;*/
   }
   .nav-link:hover,
   .nav-link:focus {
@@ -1693,12 +1705,10 @@ placeholder {
     gap: 72px 16px;
     padding-left: 10px;
   }
-
   .customer-box {
     width: 150px;
     height: 88px;
   }
-
   .title-two {
     width: 197.469px;
     color: var(--NAVY-BLUE, #2e2f42);
