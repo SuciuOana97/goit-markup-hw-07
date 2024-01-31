@@ -16,7 +16,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .studio-body {
   font-family: "Roboto", sans-serif;
 }
@@ -1711,6 +1715,11 @@ placeholder {
     gap: 72px 16px;
     padding-left: 10px;
   }*/
+  .customers-section {
+    gap: 72px 16px;
+    padding-left: 40px;
+  }
+
   .customer-box {
     width: 150px;
     height: 88px;
