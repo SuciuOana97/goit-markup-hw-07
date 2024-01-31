@@ -34,7 +34,7 @@ body {
 /*Classes style*/
 
 .modal {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -105,7 +105,7 @@ button {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -339,6 +339,7 @@ button {
 
 .top-head {
   display: flex;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   justify-content: space-between;
@@ -992,7 +993,7 @@ min-width: 360px;}
   line-height: 111.111%; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin-bottom: 72px;
+  margin: 0 auto 72px;
 }
 
 .customer-box {
@@ -1304,8 +1305,16 @@ placeholder {
   .team-list {
     flex-direction: row;
   }
+  .team-list {
+    display: block;
+    columns: 2;
+    gap: 24px;
+  }
   .team-member-container {
     width: calc((100% - 24px) / 2);
+  }
+  .team-member-container {
+    margin-bottom: 64px;
   }
   .customer-section {
     padding: 96px 108px;
@@ -1432,9 +1441,7 @@ placeholder {
   .li.image-details {
     width: calc((100% - 48px) / 3);
   }
-  .first-section-container {
-    padding: 120px 0;
-  }
+
   .team-list {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1547,8 +1554,6 @@ placeholder {
   }*/
   .navigation-list {
     flex-direction: column;
-    justify-content: left;
-    background-color: #fff;
   }
 
   .list-item {
@@ -1592,6 +1597,10 @@ placeholder {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+  }
+  .mobile-number:hover,
+  .mobile-number:focus {
+    color: var(--IRIS, #4d5ae5);
   }
 
   .mail-address {
@@ -1666,15 +1675,12 @@ placeholder {
     display: none;
   }
   .section-three-container {
-    width: 428px;
-    height: 2232px;
     flex-shrink: 0;
     background: var(--CLOUD, #f4f4fd);
   }
   .section-three-header {
     color: var(--NAVY-BLUE, #2e2f42);
     text-align: center;
-
     font-family: Roboto;
     font-size: 36px;
     font-style: normal;
@@ -1698,13 +1704,13 @@ placeholder {
     gap: 32px;
   }
 
-  .customers-section {
+  /*.customers-section {
     width: 340px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 72px 16px;
     padding-left: 10px;
-  }
+  }*/
   .customer-box {
     width: 150px;
     height: 88px;
@@ -1722,8 +1728,8 @@ placeholder {
   }
 
   .modal {
-    width: 428px;
-    height: 796px;
+    width: 100vw;
+    height: 100vw;
     flex-shrink: 0;
     background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   }
